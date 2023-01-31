@@ -1,0 +1,5 @@
+// build
+docker build . -t nginx_vod-fileserver
+
+// run
+docker run --name nginx_vod-fileserver -d -it -p81:80 -v vod_videos:/vod/videos nginx_vod-fileserver

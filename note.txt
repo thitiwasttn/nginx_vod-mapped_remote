@@ -1,0 +1,8 @@
+// create volume
+docker volume create vod_videos
+
+// build
+docker build -t nginx_vod:mapped_remote .
+
+// run container
+docker run --name nginx_vod_mapped_remote -d -it -p80:80 nginx_vod:mapped_remote
