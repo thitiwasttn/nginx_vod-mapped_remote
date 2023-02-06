@@ -1,0 +1,36 @@
+{
+  "sequences": [
+    {
+      "clips": [
+        {
+          "type": "source",
+          "path": "/vod/videos/pentor/pentor_144.mp4"
+        }
+      ]
+    },
+    {
+      "clips": [
+        {
+          "type": "source",
+          "path": "/vod/videos/pentor/pentor_360.mp4"
+        }
+      ]
+    },
+    {
+      "clips": [
+        {
+          "type": "source",
+          "path": "/vod/videos/pentor/pentor_720.mp4"
+        }
+      ]
+    },
+    {
+      "clips": [
+        {
+          "type": "source",
+          "path": "/vod/videos/pentor/pentor_1080.mp4"
+        }
+      ]
+    }
+  ]
+}
