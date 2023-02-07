@@ -1,8 +1,16 @@
 // create volume
 docker volume create vod_videos
 
+// stop container
+docker stop nginx_vod_mapped_remote
+
+docker rm nginx_vod_mapped_remote
+
+//remove old image
+docker image rm nginx_vod:mapped_remote
+
 // build
 docker build -t nginx_vod:mapped_remote .
 
 // run container
-docker run --name nginx_vod_mapped_remote -d -it -p80:80 nginx_vod:mapped_remote
+docker run --name nginx_vod_mapped_remote -d -it -p84:80 -v vod_videos:/vod/videos nginx_vod:mapped_remote
